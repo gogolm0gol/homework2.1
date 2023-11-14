@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img class="example" src="img/1.png">
+    <button id="btn">подивитись відповідь</button>
+    <p id="res"></p>
+    
+    <img class="example" src="img/2.png">
+    <button id="btn2">подивитись відповідь</button>
+    <p id="res2"></p>
+
+    <img class="example" src="img/3.png">
+    <button id="btn3">подивитись відповідь</button>
+    <p id="res3"></p>
+
+    <img class="example" src="img/4.png">
+    <button id="btn4">подивитись відповідь</button>
+    <p id="res4"></p>
+
+    <img class="example" src="img/5.png">
+    <button id="btn5">подивитись відповідь</button>
+    <p id="res5"></p>
+
+    <script>
+        
+        btn = document.getElementById("btn");
+        btn = document.getElementById("btn2");
+        btn = document.getElementById("btn3");
+        btn = document.getElementById("btn4");
+        btn = document.getElementById("btn5");
+
+        r = document.getElementById("res");
+        r = document.getElementById("res2");
+        r = document.getElementById("res3");
+        r = document.getElementById("res4");
+        r = document.getElementById("res5");
+
+        btn.addEventListener("click", fnc);
+        btn.addEventListener("click", fnc2);
+        btn.addEventListener("click", fnc3);
+        btn.addEventListener("click", fnc4);
+        btn.addEventListener("click", fnc5);
+
+        function fnc() {
+            r.innerHTML = "x=2"
+        }
+        function fnc2() {
+            r.innerHTML = "x=5; x=-5"
+        }
+        function fnc3() {
+            r.innerHTML = "x=6; x=8"
+        }
+        function fnc4() {
+            r.innerHTML = "x=0; x=5"
+        }
+        function fnc5() {
+            r.innerHTML = "x=4"
+        }
+    </script>
+    
+</body>
+</html>
